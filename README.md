@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Task Tracker Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Task Tracker web application built using React for managing tasks within a team in an organization. It allows users to track tasks, their statuses, assignees, priorities, and more.
 
-## Available Scripts
+### Live Demo 
+https://task-tracker-pi-sepia.vercel.app/
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+Task Properties: Each task includes the following properties:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Title
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Description
 
-### `npm test`
+Start Date (automatically set to the task creation date)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+End Date (only present in completed tasks)
 
-### `npm run build`
+Status (Pending, In Progress, Completed, Deployed, Deferred)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Assignee (task owner)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Priority (P0, P1, P2)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Sortable Columns: Tasks can be sorted by Priority and Start/End Date.
 
-### `npm run eject`
+### Screenshots:
+![Screenshot (62)](https://github.com/IshaGitHubProfile/task-tracker/assets/143515190/f9b45911-385d-46ba-a4ac-98d4b9fe9d5b)
+![Screenshot (63)](https://github.com/IshaGitHubProfile/task-tracker/assets/143515190/f4b58da9-ba2d-4bbc-9137-bb1f3c2e778a)
+![Screenshot (64)](https://github.com/IshaGitHubProfile/task-tracker/assets/143515190/fae40970-0563-47ea-8e30-76e9421b3901)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Filtering: Tasks can be filtered based on:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Date Range (Task creation date)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Assignee
 
-## Learn More
+Priority
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+These filters can be applied in multiple combinations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Getting Started
 
-### Code Splitting
+Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+git clone https://github.com/your-username/task-tracker.git
 
-### Analyzing the Bundle Size
+Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+cd task-tracker
 
-### Making a Progressive Web App
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm install
 
-### Advanced Configuration
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm start
 
-### Deployment
+Open http://localhost:3000 to view the app in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Usage
 
-### `npm run build` fails to minify
+Adding Tasks: Click on the "Add Task" button to create a new task. Fill in the required fields and click "Add Task" to save it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deleting Tasks: Click on a task to delete it. 
+
+Filtering Tasks: Use the filter options provided to filter tasks based on date range, assignee, and priority.
+
+Sorting Tasks: Click on the column headers to sort tasks by priority or start/end date.
+
+### Technologies Used
+
+React
+
+HTML/CSS
+
+
+JavaScript
